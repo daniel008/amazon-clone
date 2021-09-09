@@ -1,0 +1,32 @@
+[debug] [2020-10-04T10:46:46.389Z] ----------------------------------------------------------------------
+[debug] [2020-10-04T10:46:46.391Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2020-10-04T10:46:46.391Z] CLI Version:   8.11.2
+[debug] [2020-10-04T10:46:46.391Z] Platform:      darwin
+[debug] [2020-10-04T10:46:46.391Z] Node Version:  v12.18.3
+[debug] [2020-10-04T10:46:46.392Z] Time:          Sun Oct 04 2020 18:46:46 GMT+0800 (China Standard Time)
+[debug] [2020-10-04T10:46:46.392Z] ----------------------------------------------------------------------
+[debug] [2020-10-04T10:46:46.392Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=555830296&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-04T10:47:21.461Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/4wHUJ1WsAO6bWVnTjVq85PZ9bCHuIBO6CD9xTJpJZG9kPuNeuFMROPotm5wT81U2qoH7uj5OulXaLwOh_j7n7io","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2020-10-04T10:48:37.205Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.45:443
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:483:12)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:483:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:483:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
